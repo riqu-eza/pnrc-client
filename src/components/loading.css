@@ -1,0 +1,104 @@
+.loader:before {
+    content: "Loading...";
+}
+
+/* body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+} */
+
+.loader {
+    --w: 10ch;
+    width: var(--w);
+    overflow: hidden;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 55px;
+    letter-spacing: var(--w);
+    white-space: nowrap;
+    text-shadow:
+        calc(-1*var(--w)) 0 violet,
+        calc(-2*var(--w)) 0 red,
+        calc(-3*var(--w)) 0 #e945e9,
+        calc(-4*var(--w)) 0,
+        calc(-5*var(--w)) 0 green,
+        calc(-6*var(--w)) 0 orange,
+        calc(-7*var(--w)) 0,
+        calc(-8*var(--w)) 0 blue,
+        calc(-9*var(--w)) 0;
+    animation: anim 2s infinite;
+}
+
+@keyframes anim {
+    0% {
+        text-shadow:
+            calc(-1*var(--w)) 0 blue,
+            calc(-2*var(--w)) 0 green,
+            calc(-3*var(--w)) 0 green,
+            calc(-4*var(--w)) 0 violet,
+            calc(-5*var(--w)) 0 khaki,
+            calc(-6*var(--w)) 0 orange,
+            calc(-7*var(--w)) 0 cadetblue,
+            calc(-8*var(--w)) 0 greenyellow,
+            calc(-9*var(--w)) 0 salmon;
+
+    }
+
+    20% {
+        text-shadow:
+            calc(-1*var(--w)) 0 #60df0c,
+            calc(-2*var(--w)) 0 #6114a0,
+            calc(-3*var(--w)) 0 green,
+            calc(-4*var(--w)) 0 #317b99,
+            calc(-5*var(--w)) 0 #0fa868,
+            calc(-6*var(--w)) 0 orange,
+            calc(-7*var(--w)) 0 #6e137a,
+            calc(-8*var(--w)) 0 violet,
+            calc(-9*var(--w)) 0 #1746e0;
+
+    }
+
+    40% {
+        text-shadow:
+            calc(-1*var(--w)) 0 purple,
+            calc(-2*var(--w)) 0 #7fa31c,
+            calc(-3*var(--w)) 0 red,
+            calc(-4*var(--w)) 0 #eca409,
+            calc(-5*var(--w)) 0 rgb(221, 19, 53),
+            calc(-6*var(--w)) 0 #daa30d,
+            calc(-7*var(--w)) 0 maroon,
+            calc(-8*var(--w)) 0 #0e9c55,
+            calc(-9*var(--w)) 0 green;
+
+    }
+
+    60% {
+        text-shadow:
+            calc(-1*var(--w)) 0 red,
+            calc(-2*var(--w)) 0 #2159a1,
+            calc(-3*var(--w)) 0 magenta,
+            calc(-4*var(--w)) 0 #31b668,
+            calc(-5*var(--w)) 0 #912eaa,
+            calc(-6*var(--w)) 0 mediumorchid,
+            calc(-7*var(--w)) 0 #642da3,
+            calc(-8*var(--w)) 0 mediumslateblue,
+            calc(-9*var(--w)) 0 #0b3f7a;
+
+    }
+
+    80% {
+        text-shadow:
+            calc(-1*var(--w)) 0 red,
+            calc(-2*var(--w)) 0 rgb(57, 57, 187),
+            calc(-3*var(--w)) 0 #ffa516,
+            calc(-4*var(--w)) 0 #63fff4,
+            calc(-5*var(--w)) 0  #2ba361,
+            calc(-6*var(--w)) 0 #25c93a,
+            calc(-7*var(--w)) 0 green,
+            calc(-8*var(--w)) 0 #b63d3d,
+            calc(-9*var(--w)) 0 midnightblue;
+
+    }
+}

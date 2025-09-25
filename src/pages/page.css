@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Aladin&family=Anta&family=Bebas+Neue&family=Berkshire+Swash&family=Concert+One&family=Inconsolata:wdth,wght@113.7,200..900&family=Jacquard+24+Charted&family=Jaro:opsz@6..72&family=Kalam:wght@300;400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Ojuju:wght@200..800&family=Orbitron:wght@400..900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poetsen+One&family=Reggae+One&family=Sedan+SC&display=swap');
+/*citylisting page*/
+
+@font-face {
+  font-family: "Trajanpro";
+  src: url(../Assets/fonts/TrajanPro-Bold.otf) format("opentype");
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lithosregular";
+  src: url(../Assets/fonts/LithosPro-Regular.otf) format("opentype");
+  font-weight:bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NotoSans ";
+  src: url(../Assets/fonts/NotoSansCJK-VF.ttc) format("opentype");
+  
+}
+.explaintext{
+  font-family: "NotoSans";
+}
+/* header */
+.headertop{
+  font-family: "Trajanpro";
+}
+/* listingbycounty */
+.countyinfo {
+  font-family: "Kalam", cursive;
+}
+
+.countyname {
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+}
+
+/*citycontent page*/
+.cityhead {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.categoryname {
+  font-family: "Concert One", sans-serif;
+
+}
+/* homepage */
+
+/* .logomain{
+  display: block;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: -70px;
+  top: -70%;
+} */
+
+.main-text {
+
+  font-family: "Lithosregular";
+}
+
+.main-text1 {
+
+  font-family: "Trajanpro";
+  
+}
+
+/* Custom neon color styles */
+.text-slate-600 {
+  text-shadow:
+    0 0 5px #275ca7,
+    0 0 10px #275ca7,
+    0 0 15px #275ca7;
+  color: #275ca7;
+}
+
+.last-text {
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 53px;
+  color: gold;
+}
+
+.bgimage {
+  background-image: url("/images/Homebackground.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.text-neon {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #823b91;
+}
+
+.text-soft {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+/* home discover button */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 45px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10rem;
+  transition: all 0.02s;
+  font-weight: bolder;
+  color: rgb(28, 13, 155);
+  background-color: rgb(193, 228, 248);
+  z-index: 0;
+  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+  /* background: rgb(193, 228, 248); */
+  color: rgb(33, 0, 85);
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+.hoverEffect {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hoverEffect div {
+  background: rgb(248, 243, 245);
+  background: linear-gradient(90deg,
+      rgb(182, 3, 63) 0%,
+      rgb(74, 3, 112) 49%,
+      rgb(9, 199, 236) 100%);
+  border-radius: 40rem;
+  width: 10rem;
+  height: 10rem;
+  transition: 0.4s;
+  filter: blur(20px);
+  animation: effect infinite 3s linear;
+  opacity: 0.5;
+}
+
+.button:hover .hoverEffect div {
+  width: 8rem;
+  height: 8rem;
+}
+
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.blog{
+  background-image: url(../imgaes/africanpatten.jpg);
+  opacity: 90%;
+}
